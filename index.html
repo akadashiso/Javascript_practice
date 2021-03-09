@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Hello world</title>
+  <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
-    <input id="form_input" type='text' placeholder="メアドを入力">
-    <button id="submit_button">送信</button>
-    <div id='display'></div>
-    <script src="app.js"></script>
+  <p class="title">Hello world? </p>
+  <button type="button" id="btn1">jQueryで表示</button>
+  <button type="button" id="btn2">表示をかくす</button>
+  <div id="controlArea" class="disp-area">
+    <p>こんにちは！</p>
+    <p>jQueryを使って表示しています。</p>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 </body>
 
 </html>

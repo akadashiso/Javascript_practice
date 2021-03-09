@@ -1,15 +1,16 @@
-const form_input = document.getElementById("form_input")
-const submit_button = document.getElementById("submit_button")
-const display = document.getElementById("display")
-const mail_regexp = /\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/
+$(function(){
 
-submit_button.addEventListener("click", () => {
-    if (form_input.value.match(mail_regexp) == null) {
-        alert("メールアドレスが正しくありません")
-    } else {
-        display.innerHTML = form_input.value.match(mail_regexp) + "に送信済み"
-    }
-})
+  // 画面読込時に実行する。
+  $("#controlArea").hide(); // 初期表示で隠しておく
 
-var genzai = new Date();
-document.write(genzai.toUTCString());
+  // 指定ボタンを押下すると処理を開始する
+  $("#btn1").on("click", function() {
+    $("#controlArea").show(); // div領域を表示
+  });
+
+  // 指定ボタンを押下すると処理を開始する
+  $("#btn2").on("click", function() {
+    $("#controlArea").hide(); // div領域を隠す
+  });
+
+});
